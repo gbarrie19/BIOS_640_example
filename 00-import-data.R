@@ -1,3 +1,5 @@
-x <-10 
-y <- 20
-x+y
+library(pacman)
+pacman::p_load(rio, here)
+
+alzheimer_data <- import(here("data", "alzheimers_data_clean.csv"))
+nrow(alzheimer_data)
